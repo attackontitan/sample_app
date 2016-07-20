@@ -7,4 +7,9 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def is_logged_in?
+    puts "2222222222"
+    puts @session
+    @session[:user_id].nil?
+  end
 end
